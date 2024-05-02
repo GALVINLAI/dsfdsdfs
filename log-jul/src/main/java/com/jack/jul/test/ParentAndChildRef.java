@@ -1,6 +1,4 @@
-package com.jack.logjul.test;
-
-import org.slf4j.LoggerFactory;
+package com.jack.jul.test;
 
 import java.util.logging.Logger;
 

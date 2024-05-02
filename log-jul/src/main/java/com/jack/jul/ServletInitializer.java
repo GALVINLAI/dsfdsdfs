@@ -1,4 +1,4 @@
-package com.jack.logjul;
+package com.jack.jul;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;

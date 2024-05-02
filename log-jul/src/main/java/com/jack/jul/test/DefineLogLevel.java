@@ -1,32 +1,33 @@
-package com.jack.logjul.test;
+package com.jack.jul.test;
 
-import java.io.IOException;
-import java.util.logging.*;
+import java.util.logging.ConsoleHandler;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import java.util.logging.SimpleFormatter;
 
 /**
- * @Description 输出到文件
+ * @Description 定义日志级别
  * @Author Jack
  * @Date 2024/5/1
  */
-public class OutputToFile {
-    public static void main(String[] args) throws IOException {
-        Logger logger = Logger.getLogger("com.jack.OutputToFile");
+public class DefineLogLevel {
+    public static void main(String[] args) {
+        // 定义日志记录器
+        Logger logger = Logger.getLogger("com.jack.DefineLogLevel");
+
         // 将默认的日志打印方式关闭，这样打印日志就不会按照父longer的日志记录器的配置方式进行
         logger.setUseParentHandlers(false);
-        // 文件处理器
-        FileHandler fileHandler = new FileHandler("D:\\workspace\\study-log\\log-jul\\log\\output.log");
-        SimpleFormatter simpleFormatter = new SimpleFormatter();
-        fileHandler.setFormatter(simpleFormatter);
 
         ConsoleHandler consoleHandler = new ConsoleHandler();
+        // 格式化日志输出
+        SimpleFormatter simpleFormatter = new SimpleFormatter();
         consoleHandler.setFormatter(simpleFormatter);
-        // 可以同时添加多个日志处理器，比如控制台输出、邮件输出等
-        logger.addHandler(fileHandler);
+
+        // 添加 ConsoleHandler 到日志记录器
         logger.addHandler(consoleHandler);
 
-
+        //需要将日志记录器和处理器的日志分别统一设置级别，才会显示不同级别的日志
         logger.setLevel(Level.ALL);
-        fileHandler.setLevel(Level.ALL);
         consoleHandler.setLevel(Level.ALL);
 
         // servere level message：严重错误
@@ -46,5 +47,6 @@ public class OutputToFile {
 
         // finest level message：最细节信息
         logger.finest("This is a finest message.");
+
     }
 }

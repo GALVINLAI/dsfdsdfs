@@ -1,4 +1,4 @@
-package com.jack.logjul;
+package com.jack.jul;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

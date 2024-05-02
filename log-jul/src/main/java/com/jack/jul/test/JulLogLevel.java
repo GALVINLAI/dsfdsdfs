@@ -1,4 +1,4 @@
-package com.jack.logjul.test;
+package com.jack.jul.test;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
