@@ -1,0 +1,12 @@
+五月 02, 2024 11:36:21 上午 com.jack.logjul.test.OutputToFile main
+严重: This is a severe message.
+五月 02, 2024 11:36:21 上午 com.jack.logjul.test.OutputToFile main
+警告: This is a warning message.
+五月 02, 2024 11:36:21 上午 com.jack.logjul.test.OutputToFile main
+信息: This is an info message.
+五月 02, 2024 11:36:21 上午 com.jack.logjul.test.OutputToFile main
+详细: This is a fine message.
+五月 02, 2024 11:36:21 上午 com.jack.logjul.test.OutputToFile main
+较详细: This is a finer message.
+五月 02, 2024 11:36:21 上午 com.jack.logjul.test.OutputToFile main
+非常详细: This is a finest message.
