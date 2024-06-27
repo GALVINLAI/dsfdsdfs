@@ -1,8 +1,3 @@
-# study-log
-
-#### Description
-Java 开发中日志配置、管理等
-
 #### Software Architecture
 Software architecture description
 
